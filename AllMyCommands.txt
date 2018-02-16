@@ -1,3 +1,14 @@
 git init
 git add .
 git rm 3.txt
+git revert --no-commit 158f1faf245542ee71b321d3fe24cfb62cbe9c58..HEAD
+git commit -m "add 1"
+git commit -m "add 2 and 3"
+git remote add origin remote repository URL
+git remote -v
+git push origin master
+git checkout -b ReadMe
+git add README.md
+git commit -m "create branch and add file to it"
+git checkout master
+git merge ReadMe
